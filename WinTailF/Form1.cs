@@ -12,9 +12,15 @@ namespace WinTailF
 {
     public partial class Form1 : Form
     {
+        Program myProgram = new Program();
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void GoButton_Click(object sender, EventArgs e)
+        {
+             myProgram.ReadFile("TEST!");
         }
     }
 }

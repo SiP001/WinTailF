@@ -6,8 +6,12 @@ using System.Windows.Forms;
 
 namespace WinTailF
 {
-    static class Program
+    public class Program
     {
+        public void ReadFile(string args)
+        {
+            MessageBox.Show(args);
+        }
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -17,6 +21,8 @@ namespace WinTailF
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
         }
+
     }
 }
